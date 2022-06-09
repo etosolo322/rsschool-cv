@@ -51,7 +51,7 @@
       transform:translate(-50px,10px)skew(10deg,10deg)rotate(-50deg);
     }
     .left{
-      width: 45%;
+      width: 40%;
       background-color: #39383e;
       color: white;  
       progress{
@@ -91,9 +91,33 @@
             width: 100%;
             display: flex;
             align-items: baseline;
-            span{
-              width: 60px;
+            .linked{
+              width: 40px;
+              height: 40px;
+              background: url(./image/linked.png);
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              margin-right: 20px;
             }
+            .teleg{
+              @extend .linked;
+              background: url(./image/teleg.png);
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+            .email{
+              @extend .linked;
+              background: url(./image/email.png);
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+            .web{
+              @extend .linked;
+              background: url(./image/web.png);
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+            
           }
       }
       &_language{
@@ -116,8 +140,8 @@
     .right{
       padding: 0 60px 0 60px;
       background-color: #ebe9ec;
-      width: 55%;
-     color: black;
+      width: 60%;
+      color: black;
      h2{     
        border-bottom: 3px solid black;
        padding-bottom: 5px;
@@ -162,6 +186,62 @@
         }
         > p{
           padding: 0.5em 0 1em 0;
+        }
+      }
+      &_project{
+        padding: 1em 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &_item{
+          padding: 10px 5px;
+          margin: 0.5em 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 45%;
+          height: 280px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;         
+          img{
+            width: 90%;
+            transition: all 0.3s;
+            &:hover{
+              transform: scale(1.1);
+            }
+          }
+          h4{
+            padding: 0.5em 0;
+          }
+          &_stack{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            .js{
+              background-image: url(./image/js.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 2em;
+              height: 2em;
+            }
+            .react{
+              @extend .js;
+              background-image: url(./image/react.png);
+            }
+            .scss{
+              @extend .js;
+              background-image: url(./image/scss.png);
+            }
+            .html{
+              @extend .js;
+              background-image: url(./image/html.png);
+            }
+            .node{
+              @extend .js;
+              background-image: url(./image/node.png);
+            }
+          }
+          
         }
       }
     }

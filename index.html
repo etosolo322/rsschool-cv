@@ -25,8 +25,7 @@
             </nav>
           </header>
           <div class="pencil"></div>
-        <main>
-            
+        <main>            
             <section class="left"> 
                 <h6>no display</h6>
                 <div class="left_photo">
@@ -35,33 +34,29 @@
                     <h2 class="tape">CONTACT</h2>        
                     <ul class="left_contact">
                         <li>
-                            <span>
-                               linked
-                            </span>
+                            <div class="linked">                               
+                            </div>
                             <a href="https://www.linkedin.com/in/alexandr-gurski-b2ab21195/" target="_blank">
                                 Alex Gurski
                             </a>
                         </li>
                         <li>
-                            <span>
-                                telegr
-                            </span>
+                            <div class="teleg">                            
+                            </div>
                             <a>
                                 +37592234444
                             </a>
                         </li>
                         <li>
-                            <span>
-                               email
-                            </span>
+                            <div class="email">
+                            </div>
                             <a>
                                 etosolo322@yandex.ru
                             </a>
                         </li>
                         <li>
-                            <span>
-                               web
-                            </span>
+                            <div class="web">
+                            </div>
                             <a href="https://portfolioalexgurski-379b1.web.app/" target="_blank">
                                 portfolioalexgurski
                             </a>
@@ -116,7 +111,20 @@
                             <progress value="30" max="100"></progress>
                         </li>
                     </ul>
-                    <h2 class="tape">HOBBY</h2>      
+                    <h2 class="tape">CODE WARS</h2> 
+                    <pre>
+                    <code>
+        const findMissingLetter = array => {
+            let first = array[0].charCodeAt(0)
+            for (let i = 1; i < array.length; i++) {
+                if (first + i !== array[i].charCodeAt(0)) {
+                    return String.fromCharCode(first + i)
+                }
+            }
+            throw new Error("Invalid input")
+        }
+                    </code> 
+                    </pre>    
             </section>
             <section class="right"> 
                 <h6>no display</h6>
@@ -136,7 +144,7 @@
                         </div>
                         <div class="right_education_container_year">2013-2019</div>
                     </div>
-                    <p >gdfgdfgfdgf</p>
+                    <p >Higher education</p>
                 </div>   
                 <div class="right_education">
                     <div class="right_education_container">
@@ -146,7 +154,7 @@
                         </div>
                         <div class="right_education_container_year">2009-2013</div>
                     </div>
-                    <p >gdfgdfgfdgf</p>
+                    <p>Special education</p>
                 </div>
                 <h2>EXPIRIENSE</h2>
                 <div class="right_education">
@@ -170,8 +178,52 @@
                     <p>Distribution work. My responsibilities included keeping all the equipment in working order, as well as software support. Stopped working because of conscription</p>
                 </div> 
                 <h2>MY PROJECTS</h2>
-                <div class="right-project">
-                    
+                <div class="right_project">
+                    <div class="right_project_item" >
+                        <img src="./image/1project.jpg" alt="portfolio"/>
+                        <h4><a href="https://portfolioalexgurski-379b1.web.app/" target="_blank">My portfolio</a></h4>
+                        <p>Learning from real projects is much better than just reading literature. So I decided to make my own portfolio website.</p>
+                        <div class="right_project_item_stack">
+                           <div class="react"></div> 
+                           <div class="js"></div> 
+                           <div class="scss"></div> 
+                           <div class="html"></div> 
+                        </div>
+                    </div>
+                    <div class="right_project_item" >
+                        <img src="./image/2project.jpg" alt="bzsp"/>
+                        <h4><a href="https://bzsp-5c9ae.web.app/" target="_blank">BZSP</a></h4>
+                        <p>Thesis to order. Upgrade of the existing site of the plant and reworking to more modern technologies.</p>
+                        <div class="right_project_item_stack">
+                           <div class="react"></div> 
+                           <div class="js"></div> 
+                           <div class="scss"></div> 
+                           <div class="html"></div> 
+                        </div>
+                    </div>
+                    <div class="right_project_item" >
+                        <img src="./image/3project.jpg" alt="bzspupgrade"/>
+                        <h4><a href="https://bzspupgrade-f8420.web.app/" target="_blank">BZSP upgrade</a></h4>
+                        <p>An improved version of the previous project. With updated design and server node.js</p>
+                        <div class="right_project_item_stack">
+                            <div class="node"></div>
+                            <div class="react"></div> 
+                            <div class="js"></div> 
+                            <div class="scss"></div> 
+                            <div class="html"></div> 
+                        </div>
+                    </div>
+                    <div class="right_project_item" >
+                        <img src="./image/4project.jpg" alt="bzsp"/>
+                        <h4><a href="https://gurskiparalect.netlify.app/etosolo322" target="_blank">Git API</a></h4>
+                        <p>Test assignment for an internship at the company Paralect</p>
+                        <div class="right_project_item_stack">
+                           <div class="react"></div> 
+                           <div class="js"></div> 
+                           <div class="scss"></div> 
+                           <div class="html"></div> 
+                        </div>
+                    </div>
                 </div>        
             </section>
         </main>
