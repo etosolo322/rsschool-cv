@@ -3,27 +3,30 @@
     <head>	
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="header-style.css">
         <link rel="stylesheet" href="style.css">
         <title>Alexandr Gurski</title>
     </head>
-    <body>
-        <div class="wrapper">
-            <header>
-                <button class="burger">
-                <span class="burger__line"></span>
-                </button>
-                <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#about-me">About me</a></li>
-                    <li class="nav__item"><a href="#skills">Skills</a></li>
-                    <li class="nav__item"><a href="#strengths">Strengths</a></li>
-                    <li class="nav__item"><a href="#code-example">Code</a></li>
-                    <li class="nav__item"><a href="#projects">Projects</a></li>
-                    <li class="nav__item"><a href="#contact">Contact</a></li>
-                    <li class="nav__item"><a href="#education">Education</a></li>
-                </ul>
-                </nav>
+    <body>      
+            <header class="menu-wrap">       
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="#">EDUCATION</a></li>
+                                    <li><a href="#">EXPIRIENSE</a></li>
+                                    <li><a href="#">CONTACT</a></li>
+                                    <li><a href="#">LANGUAGE</a></li>
+                                    <li><a href="#">SKILS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+          
             </header>
+<div class="wrapper">
             <div class="pencil"></div>
             <main>            
                 <section class="left"> 
@@ -114,15 +117,6 @@
                         <h2 class="tape">CODE WARS</h2> 
                         <pre>
                         <code>
-            const findMissingLetter = array => {
-                let first = array[0].charCodeAt(0)
-                for (let i = 1; i < array.length; i++) {
-                    if (first + i !== array[i].charCodeAt(0)) {
-                        return String.fromCharCode(first + i)
-                    }
-                }
-                throw new Error("Invalid input")
-            }
                         </code> 
                         </pre>
                         <h2 class="tape">HOBBY</h2>     
