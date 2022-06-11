@@ -22,9 +22,13 @@ $adaptive:840px;
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
   display: flex;
   justify-content: center;
+ 
 }
 .wrapper {
   width: 1280px;

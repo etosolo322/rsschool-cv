@@ -8,25 +8,37 @@
         <link rel="stylesheet" href="code.css">
         <link rel="icon" href="./image/web.png">
         <title>Alexandr Gurski</title>
+        <script>
+            window.onload = () =>{
+                document.querySelectorAll(".menulink")
+               const handleClick = () =>{
+                window.document.getElementById("toggler").checked=false
+                }
+                document.querySelectorAll(".menulink").forEach((button) => {
+                    button.addEventListener('click', handleClick);
+                });
+            }
+         </script>
     </head>
+    
     <body>      
             <header class="menu-wrap">       
-                    <input type="checkbox" class="toggler">
+                    <input type="checkbox" class="toggler" id="toggler">
                     <div class="hamburger"><div></div></div>
                     <div class="menu">
                         <div>
                             <div>
                                 <ul>
-                                    <li><a href="#">EDUCATION</a></li>
-                                    <li><a href="#">EXPIRIENSE</a></li>
-                                    <li><a href="#">CONTACT</a></li>
-                                    <li><a href="#">LANGUAGE</a></li>
-                                    <li><a href="#">SKILS</a></li>
+                                    <li><a href="#education" class="menulink">EDUCATION</a></li>
+                                    <li><a href="#expiriense" class="menulink">EXPIRIENSE</a></li>
+                                    <li><a href="#contact" class="menulink">CONTACT</a></li>
+                                    <li><a href="#language" class="menulink">LANGUAGE</a></li>
+                                    <li><a href="#skills" class="menulink">SKILLS</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-          
+                  
             </header>
 <div class="wrapper">
             <div class="pencil"></div>
@@ -38,7 +50,7 @@
                         <span class="left_photo_name">ALEXANDR GURSKI</span>
                         <span class="left_photo_desc">A web developer at the beginning of his journey</span>
                     </div>                
-                        <h2 class="tape">CONTACT</h2>        
+                        <h2 class="tape"><a id="contact"></a>CONTACT</h2>        
                         <ul class="left_contact">
                             <li>
                                 <div class="linked">                               
@@ -50,14 +62,14 @@
                             <li>
                                 <div class="teleg">                            
                                 </div>
-                                <a>
-                                    +37592234444
+                                <a href="https://telegram.me/alexgurski" target="_blank">
+                                    @alexgurski
                                 </a>
                             </li>
                             <li>
                                 <div class="email">
                                 </div>
-                                <a>
+                                <a href="mailto:etosolo322@yandex.ru" target="_blank">
                                     etosolo322@yandex.ru
                                 </a>
                             </li>
@@ -70,7 +82,7 @@
                             </li>
                             
                         </ul>
-                        <h2 class="tape">LANGUAGE</h2>  
+                        <h2 class="tape"><a id="language"></a>LANGUAGE</h2>  
                         <ul class="left_language">
                             <li>
                                 <span>
@@ -85,7 +97,7 @@
                                 <progress value="99" max="100"></progress>
                             </li>
                         </ul>
-                        <h2 class="tape">SKILLS</h2>  
+                        <h2 class="tape"><a id="skills"></a>SKILLS</h2>  
                         <ul class="left_skills">
                             <li>
                                 <span>
@@ -162,7 +174,7 @@
                         </div>
                     </div> 
                     
-                    <h2>EDUCATION</h2>
+                    <h2><a id="education"></a>EDUCATION</h2>
                     <div class="right_education">
                         <div class="right_education_container">
                             <div class="right_education_container_place">
@@ -183,7 +195,7 @@
                         </div>
                         <p>Special education</p>
                     </div>
-                    <h2>EXPIRIENSE</h2>
+                    <h2><a id="expiriense"></a>EXPIRIENSE</h2>
                     <div class="right_education">
                         <div class="right_education_container">
                             <div class="right_education_container_place">
@@ -204,7 +216,7 @@
                         </div>
                         <p>Distribution work. My responsibilities included keeping all the equipment in working order, as well as software support. Stopped working because of conscription</p>
                     </div> 
-                    <h2>MY PROJECTS</h2>
+                    <h2><a id="project"></a>MY PROJECTS</h2>
                     <div class="right_project">
                         <div class="right_project_item" >
                             <img src="./image/1project.jpg" alt="portfolio"/>
@@ -258,13 +270,15 @@
                 <nav class="footer__nav">
                     <ul>
                         <li>
-                            Alex Gurski
+                            <a href="https://github.com/etosolo322" target="_blank">
+                                Alex Gurski
+                            </a>
                         </li>            
                         <li >
                             2022
                         </li>            
                         <li>
-                            <a class="footer_icons" href="https://rs.school/">
+                            <a class="footer_icons" href="https://rs.school/" target="_blank">
                                 <img  src="https://rs.school/images/rs_school_js.svg" alt="rsschool">
                             </a>
                         </li>
@@ -273,4 +287,5 @@
             </footer>
         </div>
     </body>
+ 
     </html>

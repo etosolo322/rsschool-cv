@@ -15,9 +15,7 @@
     right: 10px;
     top:10px;
     z-index: 100;
-    @media screen and (min-width:840px) {
-        display: none;
-    }
+
     .toggler{
         position: absolute;
         z-index: 2;
