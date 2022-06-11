@@ -15,19 +15,19 @@ $adaptive:840px;
 
 .wrapper {
   width: 1280px;
-  max-width: 100vw;
+  max-width: 95vw;
   margin: 3em auto;
   background-color: rgba(233, 225, 225, 0.479);
   position: relative;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   @media screen and (max-width:$adaptive) {
     margin: 0;
-    min-width: 100vw;
+    min-width: 95vw;
 }
   header{
     height: 70px;
-    width: 100%;
     background-color: white;
+
     ul{
       display: flex;
       justify-content: space-around;
@@ -150,6 +150,26 @@ $adaptive:840px;
         @extend .left_language;
         height: 250px;
       }
+      &_hobby{
+        display: flex;
+        height: 200px;
+        justify-content: space-around;
+        align-items: center;
+        &_item{
+          @extend %center;
+          flex-direction: column;
+          height: 90%;
+          width: 30%;
+        }
+        img{
+          height: 65%;
+        }
+      }
+      code{
+        width: 80%;
+        height: 100%;
+       
+      }
     }
     .right{
       padding: 0 60px 0 60px;
@@ -168,6 +188,9 @@ $adaptive:840px;
         display: flex;
         align-items: center;
         height: 400px;
+        @media screen and (max-width:$adaptive) {
+          display: none;
+        }
         h1{
           display: flex;
           flex-direction: column;
@@ -219,6 +242,7 @@ $adaptive:840px;
           display: flex;
           flex-direction: column;
           align-items: center;
+          justify-content: space-between;
           width: 45%;
           @media screen and (max-width:$adaptive) {
             width: 90%;

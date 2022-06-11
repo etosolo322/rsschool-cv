@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="header-style.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="code.css">
         <title>Alexandr Gurski</title>
     </head>
     <body>      
@@ -114,12 +115,36 @@
                                 <progress value="30" max="100"></progress>
                             </li>
                         </ul>
-                        <h2 class="tape">CODE WARS</h2> 
-                        <pre>
-                        <code>
-                        </code> 
-                        </pre>
-                        <h2 class="tape">HOBBY</h2>     
+                        <h2 class="tape">HOBBY</h2>   
+                        <div class="left_hobby">
+                            <div class="left_hobby_item">
+                                <img src="./image/snow.jpg" alt="snowboadr"/>
+                                <h5>Snowboarding</h5>
+                            </div>
+                            <div class="left_hobby_item">
+                                <img src="./image/travel.jpg" alt="travel"/>
+                                <h5>Traveling</h5>
+                            </div>
+                            <div class="left_hobby_item">
+                                <img src="./image/gastro.jpg" alt="gastro trips"/>
+                                <h5>Gastro trips</h5>
+                            </div>
+                        </div>
+                        <h2 class="tape">CODE</h2>                         
+                            <code>
+                                &nbsp; <span class="func">const</span>  <span class="perem">searchUser</span> = <span class="try">async</span> (<span class="id">id</span>) =>{<br>
+                                    &nbsp;&nbsp;  <span class="try">try</span> {<br>
+                                        &nbsp;&nbsp;&nbsp;  <span class="func">const</span> <span class="resp">response</span> = <span class="try">await</span> <span class="resp">octokit</span>.<span class="id">request</span>(`<span class="text">GET /users/${<span class="id">id</span>}</span>`, {<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;   <span class="perem">username</span>: <span class="id">id</span>,<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;  <span class="perem">per_page</span>:<span class="id">100</span>,<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp; <span class="perem">page</span>:<span class="id">2</span><br>
+                                            &nbsp;&nbsp;&nbsp;  }) <br>
+                                            &nbsp;&nbsp;<span class="func">return</span> <span class="resp">response</span>.<span class="id">data</span><br>
+                                            &nbsp;&nbsp;  }   <span class="try">catch</span> (<span class="err">error</span>) {<br>
+                                                &nbsp;&nbsp;&nbsp;     <span class="func">return</span> false<br>
+                                                &nbsp;&nbsp; }<br>
+                                                &nbsp; }<br>
+                            </code> 
                 </section>
                 <section class="right"> 
                     <h6>no display</h6>
